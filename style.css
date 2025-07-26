@@ -20,8 +20,9 @@
             font-family: 'Poppins', sans-serif;
             background-color: var(--dark-color);
             color: var(--light-color);
-            overflow-x: hidden;
+            overflow-x: hidden !important;
             line-height: 1.6;
+                
         }
 
         body.light-mode {
@@ -1073,6 +1074,9 @@
     
     /* Responsive Adjustments */
     @media (max-width: 768px) {
+            body{
+                    overflow-x: hidden !important;
+            }
         .contact-container {
             flex-direction: column;
         }
